@@ -58,14 +58,14 @@ A continuación se detalla la resolución de los ejercicios correspondientes a l
 
 1. En la vista del `VentasLakehouse`, ubicar la carpeta **Files** (Archivos) en el panel de exploración izquierdo.
 2. Usar la opción **Cargar > Cargar archivos** para importar el conjunto de datos de ventas en formato `.csv` proporcionado para el laboratorio.
-   > **[INSERTA AQUÍ TU CAPTURA 5: Proceso de carga del archivo CSV]**
+   > **<img width="721" height="790" alt="Captura de pantalla 5" src="https://github.com/user-attachments/assets/95499c3d-35c9-45a7-ae6d-d3c19abaf36a" />**
 
 3. Una vez que el archivo esté en OneLake, hacer clic en el menú contextual del archivo y seleccionar **Cargar en tablas** > **Nueva tabla**.
 4. Nombrar la tabla como `Fact_Ventas`.
-   > **[INSERTA AQUÍ TU CAPTURA 6: Cuadro de diálogo configurando la nueva tabla]**
+   > **<img width="1851" height="875" alt="Captura de pantalla 7" src="https://github.com/user-attachments/assets/b0d1e0be-cc1c-448e-95b4-2f204fb71fe1" />**
 
 5. Durante este proceso, Fabric convierte los datos en bruto al formato **Delta Parquet**. 
-   > **[INSERTA AQUÍ TU CAPTURA 7: La tabla 'Fact_Ventas' visible dentro de la sección 'Tables']**
+   > **<img width="1842" height="692" alt="Captura de pantalla 8" src="https://github.com/user-attachments/assets/bf124385-cd91-462c-aec6-3a96040e4b43" />**
 
 ---
 
@@ -73,17 +73,17 @@ A continuación se detalla la resolución de los ejercicios correspondientes a l
 **Objetivo:** Conectar una herramienta de Business Intelligence directamente al modelo semántico para generar insights.
 
 1. Cambiar la vista del `VentasLakehouse` de "Lakehouse" a **"Punto de conexión de análisis SQL"**.
-   > **[INSERTA AQUÍ TU CAPTURA 8: Desplegable superior derecho cambiando la vista a SQL]**
+   > **<img width="655" height="325" alt="Captura de pantalla 9" src="https://github.com/user-attachments/assets/1ccc6e0d-2720-4809-834c-4bd3d6e9af9a" />**
 
 2. En la cinta de opciones superior, seleccionar **Informes** > **Nuevo informe de Power BI**.
 3. En el lienzo del informe de Power BI, expandir la tabla `Fact_Ventas` en el panel de Datos.
-   > **[INSERTA AQUÍ TU CAPTURA 9: Interfaz web de Power BI con la tabla desplegada a la derecha]**
+   > **<img width="2816" height="1536" alt="Gemini_Generated_Image_nijpfpnijpfpnijp" src="https://github.com/user-attachments/assets/76c231ca-91dd-4627-9cc8-03e0fb6d9d96" />**
 
 4. Crear las siguientes visualizaciones:
    * **Gráfico de columnas agrupadas:** Campos `Fecha` y `Total_Ventas`.
    * **Gráfico circular (Pie chart):** Campos `Categoria` y `Total_Ventas`.
    * **Tarjeta (Card):** Campo `Total_Ventas`.
-   > **[INSERTA AQUÍ TU CAPTURA 10: Lienzo con los tres gráficos terminados]**
+   > **<img width="1024" height="132" alt="7abf770b-809f-414c-8a29-e31adb146661" src="https://github.com/user-attachments/assets/4f62658a-0ff8-4e6c-a1a8-93524d72f85e" />**
 
 5. Guardar el informe como `Dashboard_Ventas_DirectLake` en el área de trabajo previamente creada.
-   > **[INSERTA AQUÍ TU CAPTURA 11: Confirmación de guardado del informe en el área de trabajo]**
+   > **<img width="1024" height="65" alt="45e0f9c4-0d63-40d9-99b5-458af4e9c535" src="https://github.com/user-attachments/assets/094d9801-374a-49d0-9d49-9ab63e32c018" />**
